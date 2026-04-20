@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
 </head>
 <body>
 <h1>타임리프가 응답해용</h1>
@@ -10,13 +10,9 @@
 <h2>요청 방식 : [[${ method }]]</h2>
 <h2>요청 대상 : [[${ requri }]]</h2>
 <hr>
-<h2>전달된 데이터 : [[${ param.pageno }]]</h2>
+<h2>전달된 데이터 : [[${ param.pageno }]]</h2> <!--겹대괄호로 묶어야 한다.-->
 <hr>
-<a th:href="${refinfo}">다시 요청 해보자</a>
+<a th:href="${refinfo}">다시 요청 해보자</a>  <!--타임리프의 EL 표기식-->
 </body>
 </html>
-
-
-
-
 
