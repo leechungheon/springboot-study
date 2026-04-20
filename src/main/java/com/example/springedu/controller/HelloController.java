@@ -10,6 +10,6 @@ public class HelloController {
     public String hello(Model model){
         System.out.println("첫 번째 스프링 부트 테스트~~~~@@");
         model.addAttribute("data", "String Boot");
-        return "helloView";
+        return "helloView"; // view 이름만 적으면 spring 프레임워크가 알아서 매핑
     }
 }
